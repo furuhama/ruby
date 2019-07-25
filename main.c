@@ -37,6 +37,8 @@ main(int argc, char **argv)
 
     ruby_sysinit(&argc, &argv);
     {
+    fprintf(stdout, "%s\n", "Hello, Ruby!");
+
 	RUBY_INIT_STACK;
 	ruby_init();
 	return ruby_run_node(ruby_options(argc, argv));
